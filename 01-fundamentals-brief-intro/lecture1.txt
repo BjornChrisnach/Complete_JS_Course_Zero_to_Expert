@@ -1,0 +1,11 @@
+// typed in web file, console
+let js = 'amazing'
+undefined
+if(js === 'amazing') alert('javascript is fun!')
+undefined
+js = 'boring'
+"boring"
+if(js === 'amazing') alert('javascript is fun!')
+undefined
+40 + 8 +23 - 10
+61

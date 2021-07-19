@@ -131,7 +131,6 @@ console.log(ageJonas, ageSarah, avarageAge);
 
 */ // 01-fundamentals-coding-challenge-1
 
-/*
 let markMass, markHeight, johnMass, johnHeight;
 let bmi;
 let markHigherBmi = false;
@@ -200,5 +199,3 @@ else {
     markHigherBmi = false;
 }
 console.log(BMIMark, BMIJohn, markHigherBMI);
-
-*/ //01-fundamentals-strings-template-literals

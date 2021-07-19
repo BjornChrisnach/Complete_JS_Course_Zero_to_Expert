@@ -203,6 +203,7 @@ console.log(BMIMark, BMIJohn, markHigherBMI);
 
 */ //01-fundamentals-strings-template-literals
 
+/*
 const firstName = "Jonas";
 const job = "teacher";
 const birthYear = 1991;
@@ -223,3 +224,154 @@ lines")
 console.log(`String
 with multiple
 lines`)
+*/ // 01-fundamentals-if-else
+
+/*
+const age = 15;
+
+if (age >= 18) {
+    console.log("Sarah can start getting a driving license 😉")
+}
+else {
+    const yearsLeft = 18 - age;
+    console.log(`Sarah is to young. Wait another ${yearsLeft} years :)`);
+}
+
+const birthYear = 2012;
+
+let century;
+if (birthYear <= 2000) {
+    century = 20;
+}
+else {
+    century = 21;
+}
+console.log(century);
+*/ // 01-fundamentals-coding-challenge-2
+
+/*
+// test case 1
+// const massMark = 78;
+// const heightMark = 1.69;
+// const massJohn = 92;
+// const heightJohn = 1.95;
+
+// test case 2
+// const massMark = 95;
+// const heightMark = 1.88;
+// const massJohn = 85;
+// const heightJohn = 1.76;
+
+// let mutipleBMIMark = massMark / (heightMark ** 2);
+// let mutipleBMIJohn = massJohn / (heightJohn * heightJohn);
+// const BMIMark = (Number(Math.round(mutipleBMIMark + "e2") + "e-2"));
+// const BMIJohn = (Number(Math.round(mutipleBMIJohn + "e2") + "e-2"));
+// const markHigherBMI = BMIMark > BMIJohn;
+
+// if (markHigherBMI) {
+//     console.log(`Mark's BMI is ${BMIMark} and is higher than John's BMI that is ${BMIJohn}!`);
+// }
+// else {
+//     console.log(`John's BMI is ${BMIJohn} and is higher than Mark's BMI that is ${BMIMark}!`);
+// }
+
+// solution
+
+// test case 1
+// const massMark = 78;
+// const heightMark = 1.69;
+// const massJohn = 92;
+// const heightJohn = 1.95;
+
+// test case 2
+const massMark = 95;
+const heightMark = 1.88;
+const massJohn = 85;
+const heightJohn = 1.76;
+
+const BMIMark = (Number(Math.round((massMark / (heightMark ** 2)) + "e2") + "e-2"));
+const BMIJohn = (Number(Math.round((massJohn / (heightJohn * heightJohn)) + "e2") + "e-2"));
+// console.log(BMIMark, BMIJohn);
+
+if (BMIMark > BMIJohn) {
+    console.log(`Mark's BMI (${BMIMark}) is higher than John's (${BMIJohn})!`);
+}
+else {
+    console.log(`John's BMI (${BMIJohn}) is higher than Mark's (${BMIMark})!`);
+}
+*/ // 01-fundamentals-conversion-coercion
+
+/*
+// type conversion
+const inputYear = "1991";
+console.log(Number(inputYear), inputYear);
+console.log(Number(inputYear) + 18);
+
+console.log(Number("Jonas"));
+console.log(typeof (NaN));
+
+console.log(String(23), 23);
+
+// type coersion
+console.log("I am " + 23 + " years old");
+// console.log("I am " + String(23) + " years old"); // not needed with JS coersion
+console.log("23" - "10" - 3);
+console.log("23" + "10" + 3);
+console.log("23" * "2");
+console.log("23" / "2");
+console.log("23" > "18");
+
+let n = "1" + 1; // "11"
+n = n - 1; // 11 -1 = 10
+console.log(n);
+*/ // 01-fundamentals-truthy-falsy
+
+/*
+// 5 falsy values: 0, "", undefined, null, NaN
+
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean("Jonas"));
+console.log(Boolean({}));
+console.log(Boolean(""));
+
+const money = 100;
+if (money) {
+    console.log("Don't spend it all ;)");
+}
+else {
+    console.log("You should get a job!");
+}
+
+let height = 0;
+if (height) {
+    console.log("YAY! Height is defined");
+}
+else {
+    console.log("Height is undefined");
+}
+*/ // 01-fundamentals-equality_operators
+
+const age = "18";
+if (age === 18) console.log("You just became an adult ;D (strict)");
+if (age == 18) console.log("You just became an adult ;D (loose)"); // avoid use
+
+// const favourite = prompt("What's your favourite number?");
+const favourite = Number(prompt("What's your favourite number?"));
+console.log(favourite);
+console.log(typeof favourite);
+
+// if (favourite == 23) { // "23" == 23
+//     console.log("Cool! 23 is an amazing number!");
+// }
+if (favourite === 23) { // "23" == 23
+    console.log("Cool! 23 is an amazing number!");
+}
+else if (favourite === 9) {
+    console.log("9 is also a cool number!");
+}
+else {
+    console.log("Number is not 23, 7 or 9");
+}
+
+if (favourite !== 23) console.log("Why not 23?");

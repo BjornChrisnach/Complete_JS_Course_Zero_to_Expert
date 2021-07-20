@@ -257,7 +257,7 @@ if (friends.includes("Steven")) {
 */
 
 ///////////////02-fundamentals-coding-challenge-2
-
+/*
 // function calcTip(billValue) {
 //     if (billValue >= 50 && billValue <= 300) {
 //         return billValue * 0.15;
@@ -290,3 +290,22 @@ const bills = [125, 555, 44];
 const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
 const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 console.log(bills, tips, totals);
+*/
+
+///////////////02-fundamentals-intro-objects
+
+const jonasArray = [
+    "Jonas",
+    "Schmedtmann",
+    2037 - 1991,
+    "teacher",
+    ["Michael", "Peter", "Steven"]
+];
+
+const jonas = {
+    firstName: "Jonas",
+    lastName: "Schmedtmann",
+    age: 2037 - 1991,
+    job: "teacher",
+    friends: ["Michael", "Peter", "Steven"]
+};
